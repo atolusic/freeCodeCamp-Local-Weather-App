@@ -32,6 +32,11 @@ h1{
   font-size: 2.2em;
   text-align: center;
   display: block;
+  letter-spacing: 2px;
+}
+#showTime{
+  display: block;
+
 }
 hr.style-two {
     border: 0;
@@ -62,38 +67,64 @@ div.hide{
 }
 #showTemp{
   font-size: 9em;
-  font-weight: 600;
-  line-height: 150px;
+  font-weight: bold;
+  margin: 10% 0;
+  line-height: 120px;
+  float: left;
+}
+#tempUnit{
+  font-size: 30px;
+  float: right;
+  line-height: normal;
+  margin: 10% 10% 0 0;
+  cursor: pointer;
+}
+#tempUnit:hover{
+  opacity: 0.5;
+}
+#highLow{
   display: block;
+  text-align: center;
 }
 .clear-float{
   clear: both;
 }
 .other{
   margin: 0 auto;
-  width: 600px;
+  width: auto;
 }
-.wi{
+.ikone{
   font-size: 2.5em;
-  float: left;
-  padding: 0 10px;
+  display: inline-block;
   text-align: center;
   font-weight: bold;
-  margin-left: 15%;
+  width: 30%;
+  margin: 0 1.4%;
 }
 .textUnderIcons{
   display:block;
   font-size: 18px;
   margin-top: 3px;
 }
-/*Media*/
+.edit{
+  font-size: 5em !important;
+  line-height: 80px !important;
+}
+
+/* M E D I A  Q U E R I E S */
 
 @media screen and (max-width: 1000px) {
   .container{
-    width: 80%;
+    width: 90%;
   }
   .wrapper{
     width: 90%;
+  }
+}
+@media screen and (max-width: 625px){
+  .other .ikone{
+    width: 20%;
+    margin: 0 6%;
   }
 }
 
@@ -110,5 +141,42 @@ div.hide{
     display: block;
     width: 100%;
     margin: 0;
+  }
+  .other{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 340px){
+  .other .ikone{
+    padding: 0;
+    font-size: 3em;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0 !important;
+  }
+  .other .ikone .wi{
+   margin: 0 auto;
+  }
+  .other{
+    padding: 0;
+  }
+  .container{
+    margin: 0 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 250px){
+  .wrapper{
+    width: 100%;
+  }
+  .container{
+    width: 100%;
+  }
+  #cityName{
+    letter-spacing: 0px;
   }
 }
